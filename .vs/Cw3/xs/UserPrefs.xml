@@ -1,13 +1,16 @@
 ﻿<Properties StartupConfiguration="{FD9B9EB1-AD06-423C-BA8A-2E660FE07F7A}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Cw3/Properties/launchSettings.json">
     <Files>
-      <File FileName="Cw3/Properties/launchSettings.json" Line="24" Column="30" />
+      <File FileName="Cw3/Controllers/StudentsController.cs" Line="35" Column="22" />
+      <File FileName="Cw3/Properties/launchSettings.json" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Cw3" expanded="True">
             <Node name="Cw3" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True">
                 <Node name="launchSettings.json" selected="True" />
               </Node>

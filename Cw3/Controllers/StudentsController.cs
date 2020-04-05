@@ -32,11 +32,13 @@ namespace Cw3.Controllers
             return Ok(student);
         }
         [HttpPut]
+        [Route("{id}")]
         public IActionResult CreateStudent2(int id)
         {
             return Ok("Aktualizacja zakończona");
         }
         [HttpDelete]
+        [Route("{id}")]
         public IActionResult DeleteStudent(int id)
         {
             return Ok("Usuwanie zakończone");
