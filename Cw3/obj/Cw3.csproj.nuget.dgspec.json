@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/agata/Projects/Cw3/Cw3/Cw3.csproj": {}
+    "/Users/agata/DATA/STUDIA/ROK3/APBD/Cw3/Cw3.csproj": {}
   },
   "projects": {
-    "/Users/agata/Projects/Cw3/Cw3/Cw3.csproj": {
+    "/Users/agata/DATA/STUDIA/ROK3/APBD/Cw3/Cw3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/agata/Projects/Cw3/Cw3/Cw3.csproj",
+        "projectUniqueName": "/Users/agata/DATA/STUDIA/ROK3/APBD/Cw3/Cw3.csproj",
         "projectName": "Cw3",
-        "projectPath": "/Users/agata/Projects/Cw3/Cw3/Cw3.csproj",
+        "projectPath": "/Users/agata/DATA/STUDIA/ROK3/APBD/Cw3/Cw3.csproj",
         "packagesPath": "/Users/agata/.nuget/packages/",
-        "outputPath": "/Users/agata/Projects/Cw3/Cw3/obj/",
+        "outputPath": "/Users/agata/DATA/STUDIA/ROK3/APBD/Cw3/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
