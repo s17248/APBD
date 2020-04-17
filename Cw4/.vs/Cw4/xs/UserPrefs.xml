@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{D1490D3C-28F4-477A-9695-DF435F95FAFA}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Cw4/DAL/DbService.cs">
+    <Files>
+      <File FileName="Cw4/Controllers/StudentsController.cs" Line="1" Column="1" />
+      <File FileName="Cw4/DAL/DbService.cs" Line="20" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Cw4" expanded="True">
+            <Node name="Cw4" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="DAL" expanded="True">
+                <Node name="DbService.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Cw4 PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
