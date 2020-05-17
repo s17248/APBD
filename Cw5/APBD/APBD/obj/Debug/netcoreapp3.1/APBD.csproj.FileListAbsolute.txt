@@ -25,10 +25,6 @@
 //vmware-host/Shared Folders/data/studia/rok3/APBD/Cw5/APBD/APBD/obj/Debug/netcoreapp3.1/APBD.dll
 //vmware-host/Shared Folders/data/studia/rok3/APBD/Cw5/APBD/APBD/obj/Debug/netcoreapp3.1/APBD.pdb
 //vmware-host/Shared Folders/data/studia/rok3/APBD/Cw5/APBD/APBD/obj/Debug/netcoreapp3.1/APBD.genruntimeconfig.cache
-/Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/obj/Debug/netcoreapp3.1/APBD.csproj.CoreCompileInputs.cache
-/Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/obj/Debug/netcoreapp3.1/APBD.MvcApplicationPartsAssemblyInfo.cache
-/Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/obj/Debug/netcoreapp3.1/APBD.AssemblyInfoInputs.cache
-/Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/obj/Debug/netcoreapp3.1/APBD.AssemblyInfo.cs
 /Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/bin/Debug/netcoreapp3.1/appsettings.Development.json
 /Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/bin/Debug/netcoreapp3.1/appsettings.json
 /Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/bin/Debug/netcoreapp3.1/mono_crash.42f6ec1fa.0.json
@@ -45,6 +41,10 @@
 /Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/sni.dll
 /Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll
 /Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll
+/Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/obj/Debug/netcoreapp3.1/APBD.csproj.CoreCompileInputs.cache
+/Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/obj/Debug/netcoreapp3.1/APBD.MvcApplicationPartsAssemblyInfo.cache
+/Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/obj/Debug/netcoreapp3.1/APBD.AssemblyInfoInputs.cache
+/Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/obj/Debug/netcoreapp3.1/APBD.AssemblyInfo.cs
 /Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/obj/Debug/netcoreapp3.1/APBD.RazorTargetAssemblyInfo.cache
 /Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/obj/Debug/netcoreapp3.1/APBD.csproj.CopyComplete
 /Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/obj/Debug/netcoreapp3.1/staticwebassets/APBD.StaticWebAssets.Manifest.cache

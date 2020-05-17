@@ -127,6 +127,8 @@ namespace APBD.DAL
             //==mapowanie==
             //Response models
 
+            EnrollStudentResponse response = new EnrollStudentResponse();
+
             using (SqlConnection connection = new SqlConnection(conString))
             {
                 connection.Open();
@@ -153,19 +155,19 @@ namespace APBD.DAL
                     dr.Close();
 
                     // Znajdź semestr 1
-                    command.CommandText = "SELECT IdEnrollment FROM Enrollment WHERE IdStudy=@id AND Semester=1";
+                    command.CommandText = "SELECT * FROM Enrollment WHERE IdStudy=@id AND Semester=1";
                     command.Parameters.AddWithValue("id", idStudy);
                     dr = command.ExecuteReader();
                     if (!dr.Read())
                     {
                         dr.Close();
                         command.Parameters.Clear();
-                        DateTime startDate = DateTime.Now;
-                        Console.WriteLine("startDate =" + startDate);
+                        DateTime now = DateTime.Now;
+                        Console.WriteLine("now =" + now);
                         Console.Write("Dodajemy semestr 1 dla studiow =" + idStudy+"...");
                         command.CommandText = "INSERT INTO Enrollment (IdEnrollment, Semester, IdStudy, StartDate) VALUES ((SELECT ISNULL(MAX(IdEnrollment)+1, 1) FROM Enrollment), 1, @id, @startdate)";
                         command.Parameters.AddWithValue("id", idStudy);
-                        command.Parameters.AddWithValue("startdate", startDate);
+                        command.Parameters.AddWithValue("startdate", now);
                         command.ExecuteNonQuery();
                         command.Parameters.Clear();
                         Console.WriteLine(" Dodano.");
@@ -177,9 +179,23 @@ namespace APBD.DAL
                         Console.WriteLine("dr.Read()=" + dr.Read());
                     }
                     int idEnrollment = (int)dr["IdEnrollment"];
+                    DateTime startDate = Convert.ToDateTime(dr["StartDate"]);
+
                     dr.Close();
                     command.Parameters.Clear();
                     Console.WriteLine("idEnrollment=" + idEnrollment);
+
+                    command.CommandText = "SELECT IndexNumber FROM Student WHERE IndexNumber=@indexnumber";
+                    command.Parameters.AddWithValue("indexnumber", request.IndexNumber);
+                    dr = command.ExecuteReader();
+                    if(dr.Read())
+                    {
+                        dr.Close();
+                        transaction.Rollback();
+                        throw new ArgumentException("Numer indeks juz istnieje");
+                    }
+                    dr.Close();
+                    command.Parameters.Clear();
 
                     command.CommandText = "INSERT INTO Student (IndexNumber, FirstName, LastName, BirthDate, IdEnrollment) VALUES (@indexnumber, @firstname, @lastname, @birthname, @idenrollment)";
                     command.Parameters.AddWithValue("indexnumber", request.IndexNumber);
@@ -193,6 +209,8 @@ namespace APBD.DAL
 
                     transaction.Commit();
                     connection.Close();
+
+                    response.StartDate = startDate;
                 }
                 catch (SqlException e)
                 {
@@ -214,10 +232,8 @@ namespace APBD.DAL
             Console.WriteLine("request.LastName=" + request.LastName);
             Console.WriteLine("request.Birthdate=" + request.Birthdate);
             Console.WriteLine("request.Studies=" + request.Studies);
-            EnrollStudentResponse response = new EnrollStudentResponse();
             response.LastName = request.LastName;
             response.Semester = 1;
-            //response.StartDate = ...;
             return response;
 
             //var st = new Student();
