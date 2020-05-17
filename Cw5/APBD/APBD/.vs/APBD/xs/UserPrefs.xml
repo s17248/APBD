@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{EB9525A4-1EE0-47BF-B330-494A71C7F130}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/EnrollmentsController.cs">
+    <Files>
+      <File FileName="Controllers/EnrollmentsController.cs" Line="33" Column="26" />
+      <File FileName="DAL/IDbService.cs" Line="12" Column="20" />
+      <File FileName="DAL/DbService.cs" Line="106" Column="82" />
+      <File FileName="DTOs/Requests/EnrollStudentRequest.cs" Line="9" Column="18" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="APBD" expanded="True">
+            <Node name="APBD" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="EnrollmentsController.cs" selected="True" />
+              </Node>
+              <Node name="DAL" expanded="True" />
+              <Node name="DTOs" expanded="True">
+                <Node name="Requests" expanded="True" />
+                <Node name="Responses" expanded="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.APBD PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

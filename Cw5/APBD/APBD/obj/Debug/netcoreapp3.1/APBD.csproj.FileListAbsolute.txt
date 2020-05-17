@@ -1,0 +1,53 @@
+//vmware-host/Shared Folders/data/studia/rok3/APBD/Cw5/APBD/APBD/bin/Debug/netcoreapp3.1/appsettings.Development.json
+//vmware-host/Shared Folders/data/studia/rok3/APBD/Cw5/APBD/APBD/bin/Debug/netcoreapp3.1/appsettings.json
+//vmware-host/Shared Folders/data/studia/rok3/APBD/Cw5/APBD/APBD/bin/Debug/netcoreapp3.1/mono_crash.42f6ec1fa.0.json
+//vmware-host/Shared Folders/data/studia/rok3/APBD/Cw5/APBD/APBD/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
+//vmware-host/Shared Folders/data/studia/rok3/APBD/Cw5/APBD/APBD/bin/Debug/netcoreapp3.1/APBD.exe
+//vmware-host/Shared Folders/data/studia/rok3/APBD/Cw5/APBD/APBD/bin/Debug/netcoreapp3.1/APBD.deps.json
+//vmware-host/Shared Folders/data/studia/rok3/APBD/Cw5/APBD/APBD/bin/Debug/netcoreapp3.1/APBD.runtimeconfig.json
+//vmware-host/Shared Folders/data/studia/rok3/APBD/Cw5/APBD/APBD/bin/Debug/netcoreapp3.1/APBD.runtimeconfig.dev.json
+//vmware-host/Shared Folders/data/studia/rok3/APBD/Cw5/APBD/APBD/bin/Debug/netcoreapp3.1/APBD.dll
+//vmware-host/Shared Folders/data/studia/rok3/APBD/Cw5/APBD/APBD/bin/Debug/netcoreapp3.1/APBD.pdb
+//vmware-host/Shared Folders/data/studia/rok3/APBD/Cw5/APBD/APBD/bin/Debug/netcoreapp3.1/System.Data.SqlClient.dll
+//vmware-host/Shared Folders/data/studia/rok3/APBD/Cw5/APBD/APBD/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/sni.dll
+//vmware-host/Shared Folders/data/studia/rok3/APBD/Cw5/APBD/APBD/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/sni.dll
+//vmware-host/Shared Folders/data/studia/rok3/APBD/Cw5/APBD/APBD/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/sni.dll
+//vmware-host/Shared Folders/data/studia/rok3/APBD/Cw5/APBD/APBD/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll
+//vmware-host/Shared Folders/data/studia/rok3/APBD/Cw5/APBD/APBD/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll
+//vmware-host/Shared Folders/data/studia/rok3/APBD/Cw5/APBD/APBD/obj/Debug/netcoreapp3.1/APBD.csproj.CoreCompileInputs.cache
+//vmware-host/Shared Folders/data/studia/rok3/APBD/Cw5/APBD/APBD/obj/Debug/netcoreapp3.1/APBD.MvcApplicationPartsAssemblyInfo.cache
+//vmware-host/Shared Folders/data/studia/rok3/APBD/Cw5/APBD/APBD/obj/Debug/netcoreapp3.1/APBD.AssemblyInfoInputs.cache
+//vmware-host/Shared Folders/data/studia/rok3/APBD/Cw5/APBD/APBD/obj/Debug/netcoreapp3.1/APBD.AssemblyInfo.cs
+//vmware-host/Shared Folders/data/studia/rok3/APBD/Cw5/APBD/APBD/obj/Debug/netcoreapp3.1/APBD.RazorTargetAssemblyInfo.cache
+//vmware-host/Shared Folders/data/studia/rok3/APBD/Cw5/APBD/APBD/obj/Debug/netcoreapp3.1/APBD.csproj.CopyComplete
+//vmware-host/Shared Folders/data/studia/rok3/APBD/Cw5/APBD/APBD/obj/Debug/netcoreapp3.1/staticwebassets/APBD.StaticWebAssets.Manifest.cache
+//vmware-host/Shared Folders/data/studia/rok3/APBD/Cw5/APBD/APBD/obj/Debug/netcoreapp3.1/staticwebassets/APBD.StaticWebAssets.xml
+//vmware-host/Shared Folders/data/studia/rok3/APBD/Cw5/APBD/APBD/obj/Debug/netcoreapp3.1/APBD.dll
+//vmware-host/Shared Folders/data/studia/rok3/APBD/Cw5/APBD/APBD/obj/Debug/netcoreapp3.1/APBD.pdb
+//vmware-host/Shared Folders/data/studia/rok3/APBD/Cw5/APBD/APBD/obj/Debug/netcoreapp3.1/APBD.genruntimeconfig.cache
+/Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/bin/Debug/netcoreapp3.1/appsettings.Development.json
+/Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/bin/Debug/netcoreapp3.1/appsettings.json
+/Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/bin/Debug/netcoreapp3.1/mono_crash.42f6ec1fa.0.json
+/Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
+/Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/bin/Debug/netcoreapp3.1/APBD.deps.json
+/Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/bin/Debug/netcoreapp3.1/APBD.runtimeconfig.json
+/Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/bin/Debug/netcoreapp3.1/APBD.runtimeconfig.dev.json
+/Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/bin/Debug/netcoreapp3.1/APBD.dll
+/Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/bin/Debug/netcoreapp3.1/APBD.pdb
+/Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/bin/Debug/netcoreapp3.1/System.Data.SqlClient.dll
+/Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/sni.dll
+/Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/sni.dll
+/Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/sni.dll
+/Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll
+/Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll
+/Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/obj/Debug/netcoreapp3.1/APBD.csproj.CoreCompileInputs.cache
+/Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/obj/Debug/netcoreapp3.1/APBD.MvcApplicationPartsAssemblyInfo.cache
+/Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/obj/Debug/netcoreapp3.1/APBD.AssemblyInfoInputs.cache
+/Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/obj/Debug/netcoreapp3.1/APBD.AssemblyInfo.cs
+/Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/obj/Debug/netcoreapp3.1/APBD.RazorTargetAssemblyInfo.cache
+/Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/obj/Debug/netcoreapp3.1/APBD.csproj.CopyComplete
+/Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/obj/Debug/netcoreapp3.1/staticwebassets/APBD.StaticWebAssets.Manifest.cache
+/Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/obj/Debug/netcoreapp3.1/staticwebassets/APBD.StaticWebAssets.xml
+/Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/obj/Debug/netcoreapp3.1/APBD.dll
+/Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/obj/Debug/netcoreapp3.1/APBD.pdb
+/Volumes/Enigma/agatka/data/studia/rok3/APBD/Cw5/APBD/APBD/obj/Debug/netcoreapp3.1/APBD.genruntimeconfig.cache

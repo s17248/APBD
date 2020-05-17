@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{E554071E-45C5-4AA3-BB8F-C76F05832394}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="APBD/DAL/DbService.cs">
+    <Files>
+      <File FileName="APBD/DAL/DbService.cs" Line="19" Column="11" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="APBD" expanded="True" selected="True">
+            <Node name="APBD" expanded="True">
+              <Node name="Properties" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.APBD PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

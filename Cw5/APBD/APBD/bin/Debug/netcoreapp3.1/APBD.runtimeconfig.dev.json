@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/Users/agata/.dotnet/store/|arch|/|tfm|",
+      "/Users/agata/.nuget/packages"
+    ]
+  }
+}
