@@ -2,6 +2,7 @@
 using APBD.Models;
 using System.Collections.Generic;
 using APBD.DTOs.Requests;
+using APBD.DTOs.Responses;
 
 namespace APBD.DAL
 {
@@ -10,7 +11,7 @@ namespace APBD.DAL
         public IEnumerable<Student> GetStudents();
         public IEnumerable<Enrollment> GetStudentEnrollments(string id);
         public int GetStudiesCount(string studiesName);
-        public void EnrollStudent(EnrollStudentRequest request);
+        public EnrollStudentResponse EnrollStudent(EnrollStudentRequest request);
         //public void PromoteStudents(int semester, string studies);
     }
 }

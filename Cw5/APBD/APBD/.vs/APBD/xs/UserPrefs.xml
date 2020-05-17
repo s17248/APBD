@@ -1,23 +1,26 @@
 ﻿<Properties StartupConfiguration="{EB9525A4-1EE0-47BF-B330-494A71C7F130}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/EnrollmentsController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DTOs/Responses/EnrollStudentResponse.cs">
     <Files>
-      <File FileName="Controllers/EnrollmentsController.cs" Line="33" Column="26" />
-      <File FileName="DAL/IDbService.cs" Line="12" Column="20" />
-      <File FileName="DAL/DbService.cs" Line="106" Column="82" />
-      <File FileName="DTOs/Requests/EnrollStudentRequest.cs" Line="9" Column="18" />
+      <File FileName="Controllers/EnrollmentsController.cs" Line="41" Column="46" />
+      <File FileName="DTOs/Requests/EnrollStudentRequest.cs" Line="19" Column="1" />
+      <File FileName="Models/Student.cs" Line="23" Column="1" />
+      <File FileName="Student2.cs" Line="12" Column="24" />
+      <File FileName="DAL/IDbService.cs" Line="13" Column="70" />
+      <File FileName="DAL/DbService.cs" Line="191" Column="55" />
+      <File FileName="DTOs/Responses/EnrollStudentResponse.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="APBD" expanded="True">
             <Node name="APBD" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="EnrollmentsController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="DAL" expanded="True" />
               <Node name="DTOs" expanded="True">
                 <Node name="Requests" expanded="True" />
-                <Node name="Responses" expanded="True" />
+                <Node name="Responses" expanded="True">
+                  <Node name="EnrollStudentResponse.cs" selected="True" />
+                </Node>
               </Node>
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
