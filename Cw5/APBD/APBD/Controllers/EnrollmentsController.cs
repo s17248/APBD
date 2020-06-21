@@ -31,7 +31,7 @@ namespace APBD.Controllers
             }
 
             // Zapisanie studenta na 1-szy rok
-            EnrollStudentResponse enrollment = null;
+            Enrollment enrollment = null;
             try
             {
                 enrollment = _service.EnrollStudent(request);

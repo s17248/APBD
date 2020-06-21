@@ -1,13 +1,14 @@
 ﻿<Properties StartupConfiguration="{EB9525A4-1EE0-47BF-B330-494A71C7F130}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="DTOs/Responses/EnrollStudentResponse.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Models/Enrollment.cs">
     <Files>
-      <File FileName="Controllers/EnrollmentsController.cs" Line="41" Column="46" />
-      <File FileName="DTOs/Requests/EnrollStudentRequest.cs" Line="19" Column="1" />
-      <File FileName="Models/Student.cs" Line="23" Column="1" />
-      <File FileName="Student2.cs" Line="12" Column="24" />
-      <File FileName="DAL/IDbService.cs" Line="13" Column="70" />
-      <File FileName="DAL/DbService.cs" Line="191" Column="55" />
-      <File FileName="DTOs/Responses/EnrollStudentResponse.cs" Line="1" Column="1" />
+      <File FileName="Controllers/EnrollmentsController.cs" Line="34" Column="23" />
+      <File FileName="DTOs/Requests/EnrollStudentRequest.cs" />
+      <File FileName="Models/Student.cs" />
+      <File FileName="Student2.cs" />
+      <File FileName="DAL/IDbService.cs" />
+      <File FileName="DAL/DbService.cs" />
+      <File FileName="DTOs/Responses/EnrollStudentResponse.cs" />
+      <File FileName="Models/Enrollment.cs" Line="16" Column="31" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,11 +19,11 @@
               <Node name="DAL" expanded="True" />
               <Node name="DTOs" expanded="True">
                 <Node name="Requests" expanded="True" />
-                <Node name="Responses" expanded="True">
-                  <Node name="EnrollStudentResponse.cs" selected="True" />
-                </Node>
+                <Node name="Responses" expanded="True" />
               </Node>
-              <Node name="Models" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Enrollment.cs" selected="True" />
+              </Node>
               <Node name="Properties" expanded="True" />
               <Node name="appsettings.json" expanded="True" />
             </Node>

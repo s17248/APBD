@@ -11,7 +11,7 @@ namespace APBD.DAL
         public IEnumerable<Student> GetStudents();
         public IEnumerable<Enrollment> GetStudentEnrollments(string id);
         public int GetStudiesCount(string studiesName);
-        public EnrollStudentResponse EnrollStudent(EnrollStudentRequest request);
+        public Enrollment EnrollStudent(EnrollStudentRequest request);
         //public void PromoteStudents(int semester, string studies);
     }
 }
