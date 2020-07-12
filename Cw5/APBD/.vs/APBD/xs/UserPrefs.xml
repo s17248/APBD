@@ -6,8 +6,11 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="APBD" expanded="True" selected="True">
+          <Node name="APBD" expanded="True">
             <Node name="APBD" expanded="True">
+              <Node name="DAL" expanded="True">
+                <Node name="DbService.cs" selected="True" />
+              </Node>
               <Node name="Properties" expanded="True" />
               <Node name="appsettings.json" expanded="True" />
             </Node>
