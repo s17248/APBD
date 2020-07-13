@@ -1,4 +1,5 @@
-﻿using s17248_kolokwium.DTOs.Responses;
+﻿using s17248_kolokwium.DTOs.Requests;
+using s17248_kolokwium.DTOs.Responses;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,5 +11,7 @@ namespace s17248_kolokwium.Services
     {
         public FirefighterResponse GetFirefighter(int IdFirefighter);
         public IEnumerable<FirefighterActionResponse> GetFirefigtherActions(int IdFirefighter);
+        public FiretruckResponse AssignFiretruckToAction(int IdAction, FiretruckRequest request);
+        public ActionResponse GetAction(int id);
     }
 }

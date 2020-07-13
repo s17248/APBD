@@ -1,4 +1,5 @@
-﻿using s17248_kolokwium.DTOs.Responses;
+﻿using s17248_kolokwium.DTOs.Requests;
+using s17248_kolokwium.DTOs.Responses;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -54,6 +55,18 @@ namespace s17248_kolokwium.Services
                 }
             }
             return listOfActions;
+        }
+        public ActionResponse GetAction(int id)
+        {
+            ActionResponse a = new ActionResponse();
+            // ...
+            return null;
+        }
+        public FiretruckResponse AssignFiretruckToAction(int IdAction, FiretruckRequest request)
+        {
+            FiretruckResponse f = new FiretruckResponse();
+            // ...
+            return f;
         }
     }
 }
