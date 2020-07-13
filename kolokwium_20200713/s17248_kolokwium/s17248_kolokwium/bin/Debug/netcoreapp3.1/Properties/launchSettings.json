@@ -12,7 +12,7 @@
     "s17248_kolokwium": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "api/firefighters/1/actions",
+      "launchUrl": "api/firefighters/2/actions",
       "applicationUrl": "http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

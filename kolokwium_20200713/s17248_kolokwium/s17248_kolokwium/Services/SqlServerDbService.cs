@@ -22,8 +22,7 @@ namespace s17248_kolokwium.Services
                 connection.Open();
                 command.Parameters.AddWithValue("@id", IdFirefighter);
                 var dr = command.ExecuteReader();
-                while (dr.Read())
-                {
+                while (dr.Read()) {
                     f = new FirefighterResponse(
                         Convert.ToInt32(dr["IdFirefighter"]),
                         dr["FirstName"].ToString(),
@@ -37,7 +36,7 @@ namespace s17248_kolokwium.Services
         public IEnumerable<FirefighterActionResponse> GetFirefigtherActions(int IdFirefighter)
         {
             List<FirefighterActionResponse> listOfActions = new List<FirefighterActionResponse>();
-            string queryString = "SELECT a.IdAction, a.StartTime, a.EndTime FROM Action a JOIN Firefighter_Action f ON a.IdAction = f.IdAction WHERE f.IdFirefighter=@id";
+            string queryString = "SELECT a.IdAction, a.StartTime, a.EndTime FROM Action a JOIN Firefighter_Action f ON a.IdAction = f.IdAction WHERE f.IdFirefighter=@id ORDER BY a.EndTime DESC";
 
             using (SqlConnection connection = new SqlConnection(conString))
             using (SqlCommand command = new SqlCommand(queryString, connection))
@@ -47,10 +46,11 @@ namespace s17248_kolokwium.Services
                 var dr = command.ExecuteReader();
                 while (dr.Read())
                 {
+                    //int id = dr["IdAction"];
                     FirefighterActionResponse a = new FirefighterActionResponse(
                         Convert.ToInt32(dr["IdAction"]),
-                        Convert.ToDateTime(dr["StartDate"]),
-                        Convert.ToDateTime(dr["EndDate"])
+                        Convert.ToDateTime(dr["StartTime"]),
+                        Convert.ToDateTime(dr["EndTime"])
                     );
                     listOfActions.Add(a);
                 }
