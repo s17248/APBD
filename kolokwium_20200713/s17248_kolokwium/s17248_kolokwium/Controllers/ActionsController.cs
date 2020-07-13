@@ -23,7 +23,7 @@ namespace s17248_kolokwium.Controllers
         public IActionResult AssignFiretruckToAction(int id, FiretruckRequest request)
         {
             if (_dbService.GetAction(id) == null)
-                return BadRequest("Woz o podanym numerze nie istnieje");
+                return BadRequest("Akcja o podanym numerze nie istnieje");
 
             FiretruckResponse f = null;
             try

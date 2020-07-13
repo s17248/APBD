@@ -46,7 +46,6 @@ namespace s17248_kolokwium.Services
                 var dr = command.ExecuteReader();
                 while (dr.Read())
                 {
-                    //int id = dr["IdAction"];
                     FirefighterActionResponse a = new FirefighterActionResponse(
                         Convert.ToInt32(dr["IdAction"]),
                         Convert.ToDateTime(dr["StartTime"]),
@@ -59,9 +58,26 @@ namespace s17248_kolokwium.Services
         }
         public ActionResponse GetAction(int id)
         {
-            ActionResponse a = new ActionResponse();
-            // ...
-            return null;
+            string queryString = "SELECT * FROM Action f WHERE f.IdAction=@id";
+            ActionResponse a = null;
+
+            using (SqlConnection connection = new SqlConnection(conString))
+            using (SqlCommand command = new SqlCommand(queryString, connection))
+            {
+                connection.Open();
+                command.Parameters.AddWithValue("@id", id);
+                var dr = command.ExecuteReader();
+                while (dr.Read())
+                {
+                    a = new ActionResponse(
+                        Convert.ToInt32(dr["IdAction"]),
+                        Convert.ToDateTime(dr["StartTime"]),
+                        Convert.ToDateTime(dr["EndTime"]),
+                        Convert.ToBoolean(dr["NeedsSpecialEquipment"])
+                    );
+                }
+            }
+            return a;
         }
         public FiretruckResponse AssignFiretruckToAction(int IdAction, FiretruckRequest request)
         {
