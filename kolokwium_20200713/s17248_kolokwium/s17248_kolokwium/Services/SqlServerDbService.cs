@@ -10,10 +10,9 @@ namespace s17248_kolokwium.Services
 {
     public class SqlServerDbService : IDbService
     {
-
+        private const string conString = "Data Source=DESKTOP-D0NAD3I\\SQLEXPRESS;Initial Catalog=s17248;Integrated Security=True";
         public FirefighterResponse GetFirefighter(int IdFirefighter)
         {
-            const string conString = "Data Source = DESKTOP - D0NAD3I; Initial Catalog = s17248; Integrated Security = True";
             string queryString = "SELECT * FROM Firefighter f WHERE f.IdFirefighter=@id";
             FirefighterResponse f = null;
 
@@ -23,11 +22,14 @@ namespace s17248_kolokwium.Services
                 connection.Open();
                 command.Parameters.AddWithValue("@id", IdFirefighter);
                 var dr = command.ExecuteReader();
-                f = new FirefighterResponse(
-                    Convert.ToInt32(dr["IdFirefighter"]),
-                    dr["FirstName"].ToString(),
-                    dr["LastName"].ToString()
-                );
+                while (dr.Read())
+                {
+                    f = new FirefighterResponse(
+                        Convert.ToInt32(dr["IdFirefighter"]),
+                        dr["FirstName"].ToString(),
+                        dr["LastName"].ToString()
+                    );
+                }
             }
             return f;
         }
@@ -35,7 +37,6 @@ namespace s17248_kolokwium.Services
         public IEnumerable<FirefighterActionResponse> GetFirefigtherActions(int IdFirefighter)
         {
             List<FirefighterActionResponse> listOfActions = new List<FirefighterActionResponse>();
-            const string conString = "Data Source = DESKTOP - D0NAD3I; Initial Catalog = s17248; Integrated Security = True";
             string queryString = "SELECT a.IdAction, a.StartTime, a.EndTime FROM Action a JOIN Firefighter_Action f ON a.IdAction = f.IdAction WHERE f.IdFirefighter=@id";
 
             using (SqlConnection connection = new SqlConnection(conString))
