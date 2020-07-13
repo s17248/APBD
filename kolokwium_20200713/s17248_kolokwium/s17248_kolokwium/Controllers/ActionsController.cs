@@ -20,11 +20,12 @@ namespace s17248_kolokwium.Controllers
             _dbService = dbService;
         }
         [HttpPost("{id}/fire-trucks")]
-        public IActionResult AssignFiretruckToAction(int id, FiretruckRequest request)
+        public IActionResult AssignFiretruckToAction(int id)
         {
             if (_dbService.GetAction(id) == null)
                 return BadRequest("Akcja o podanym numerze nie istnieje");
 
+            FiretruckRequest request = null;
             FiretruckResponse f = null;
             try
             {
