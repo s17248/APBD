@@ -73,17 +73,79 @@ namespace s17248_kolokwium.Services
                         Convert.ToInt32(dr["IdAction"]),
                         Convert.ToDateTime(dr["StartTime"]),
                         Convert.ToDateTime(dr["EndTime"]),
-                        Convert.ToBoolean(dr["NeedsSpecialEquipment"])
+                        Convert.ToBoolean(dr["NeedSpecialEquipment"])
                     );
                 }
             }
             return a;
         }
-        public FiretruckResponse AssignFiretruckToAction(int IdAction, FiretruckRequest request)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="IdAction"></param>
+        /// <returns></returns>
+        public ActionFiretruckResponse AssignFiretruckToAction(int IdAction, String data)
         {
-            FiretruckResponse f = new FiretruckResponse();
-            // ...
-            return f;
+            ActionFiretruckResponse response = null;
+            using (SqlConnection connection = new SqlConnection(conString))
+            {
+                connection.Open();
+
+                // https://docs.microsoft.com/pl-pl/dotnet/api/system.data.sqlclient.sqlconnection.begintransaction?view=dotnet-plat-ext-3.1
+                SqlCommand command = connection.CreateCommand();
+                SqlTransaction transaction = connection.BeginTransaction("transaction");
+                command.Connection = connection;
+                command.Transaction = transaction;
+
+                try
+                {
+                    command.CommandText = "SELECT * FROM Action f WHERE f.IdAction=@id";
+                    command.Parameters.AddWithValue("@id", IdAction);
+                    SqlDataReader dr = command.ExecuteReader();
+                    if (!dr.Read())
+                    {
+                        dr.Close();
+                        transaction.Rollback();
+                        throw new ArgumentException("Akcja o podanym numerze nie istnieje");
+                    }
+                    bool needsSpecialEquipment = (bool)dr["NeedSpecialEquipment"];
+                    dr.Close();
+
+                    command.CommandText = "SELECT* FROM FireTruck WHERE IdFireTruck NOT IN(SELECT IdFireTruck FROM FireTruck_Action WHERE CONVERT(date, AssignmentDate) = @data);";
+                    //String currentDate = '2020-07-13';
+                    command.Parameters.AddWithValue("data", data);
+                    dr = command.ExecuteReader();
+                    if (dr.Read())
+                    {
+                        response = new ActionFiretruckResponse();
+                        response.IdAction = IdAction;
+                        response.IdFireTruck = Convert.ToInt32(dr["IdFireTruck"]);
+                        dr.Close();
+                        command.Parameters.Clear();
+
+                        command.CommandText = "INSERT INTO FireTruck_Action (IdFireTruckAction, IdFireTruck, IdAction, AssignmentDate) VALUES ((SELECT ISNULL(MAX(IdFireTruckAction)+1, 1) FROM FireTruck_Action), @truck, @action, @data);";
+                        command.Parameters.AddWithValue("truck", response.IdFireTruck);
+                        command.Parameters.AddWithValue("action", response.IdAction);
+                        command.Parameters.AddWithValue("data", data+ " 00:00:00 AM");
+                        command.ExecuteNonQuery();
+                        command.Parameters.Clear();
+                        transaction.Commit();
+                    }
+                }
+                catch (SqlException e)
+                {
+                    Console.WriteLine(e);
+                    transaction.Rollback();
+                    connection.Close();
+                    throw e;
+                }
+                catch (ArgumentException e)
+                {
+                    connection.Close();
+                    throw e;
+                }
+            }
+            return response;
         }
     }
 }

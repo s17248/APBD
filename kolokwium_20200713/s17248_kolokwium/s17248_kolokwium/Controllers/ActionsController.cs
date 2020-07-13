@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -25,17 +26,13 @@ namespace s17248_kolokwium.Controllers
             if (_dbService.GetAction(id) == null)
                 return BadRequest("Akcja o podanym numerze nie istnieje");
 
-            FiretruckRequest request = null;
-            FiretruckResponse f = null;
-            try
+            ActionFiretruckResponse response = _dbService.AssignFiretruckToAction(id, "2020-07-13");
+            var options = new JsonSerializerOptions
             {
-                f = _dbService.AssignFiretruckToAction(id, request);
-            }
-            catch (Exception e)
-            {
-                return BadRequest(e.Message);
-            }
-            return Created("", f);
+                WriteIndented = true
+            };
+            string jsonString = JsonSerializer.Serialize(response, options);
+            return Ok(jsonString);
         }
     }
 }

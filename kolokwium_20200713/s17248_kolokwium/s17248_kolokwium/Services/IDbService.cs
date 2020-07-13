@@ -11,7 +11,7 @@ namespace s17248_kolokwium.Services
     {
         public FirefighterResponse GetFirefighter(int IdFirefighter);
         public IEnumerable<FirefighterActionResponse> GetFirefigtherActions(int IdFirefighter);
-        public FiretruckResponse AssignFiretruckToAction(int IdAction, FiretruckRequest request);
+        public ActionFiretruckResponse AssignFiretruckToAction(int IdAction, String data);
         public ActionResponse GetAction(int id);
     }
 }
